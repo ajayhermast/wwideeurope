@@ -1,42 +1,30 @@
-<nav class="js-lp-navbar lp-header__navbar lp-navbar lp-navbar--overlay rm-background is-fixed is-mobile-menu-active" style="z-index: 9999;margin-top: 10px;border-radius: 5px;box-shadow: 0 4px 20px -2px grey;">
-    <div class="lp-navbar__container lp-container">
-        <nav class="lp-navbar__item lp-navbar__item--nav lp-nav">
-            <a class="js-nav-link lp-nav__item" href="/" data-track-category="navigation_button" data-track-clicks="websites">Home</a>
-            <a class="js-nav-link lp-nav__item" href="/who_we_are" data-track-category="navigation_button" data-track-clicks="who_we_are">Who we are</a>
-            <a class="js-nav-link lp-nav__item" href="/projects" data-track-category="navigation_button" data-track-clicks="Our_projects">Our Projects</a>
-            <a class="js-nav-link lp-nav__item" href="/careers" data-track-category="navigation_button" data-track-clicks="careers">Careers</a>
-        </nav>
+<nav class="js-lp-navbar lp-header__navbar lp-navbar lp-navbar--overlay rm-background is-fixed is-mobile-menu-active" style="">
+    <!-- <div class="lp-navbar__container lp-container">
         <a class="lp-navbar__item lp-navbar__item--logo" href="/">
             <div class="lp-navbar__logo lp-logo lp-logo--light" data-track-clicks="logo" data-track-category="navigation_button">
-                <img alt="WWideEuorope" src=".///public/assets/logo.png">
+                <img alt="WWideEuorope" src="..//assets/logo.png">
             </div>
-        </a>
-            <div class="lp-navbar__item lp-navbar__item--actions" id="authentication-nav">  
-                    <a class="overlay-navbar lp-navbar__button btn lp-navbar__button--fixed btn--secondary" data-track-category="signup_button" data-track-clicks="top_right" href="/contact" id="sign-up-button">Contact Us</a>
-            </div>
-    </div>
-
-
+        </a> 
+    </div> -->
     <div class="js-lp-mobile-menu lp-mobile-menu-wrapper">
         <div class="lp-navbar__item lp-navbar__item--icon" (click)="toggleNav()">
             <div class="js-menu-icon lp-navbar__icon" data-track-category="navigation_button" data-track-clicks="hamburger">
                 <img alt="Menu icon" src="//cdn2.editmysite.com/images/landing-pages/global/shared/navbar/sandwich.svg">
             </div>
         </div>
-        <div class="lp-navbar__logo-small lp-logo lp-logo--small lp-logo--light" data-track-category="navigation_button" data-track-clicks="logo">
+        <div class="lp-navbar__logo-small lp-logo lp-logo--small lp-logo--light">
             <a href="/">
-                <img alt="WWideEuorope" height="40" src=".///public/assets/logo.png">
+                <img alt="WWideEuorope" height="40" src="..//assets/logo.png">
             </a>
         </div>
         
         <nav class="lp-mobile-menu lp-nav" style="display: none;" [class.active]="isDropdownOpen">
             <div class="js-nav-link-wrapper">
-                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/who_we_are" data-track-category="navigation_button" data-track-clicks="who_we_are">Who we are</a>
-                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/projects" data-track-category="navigation_button" data-track-clicks="Our_projects">Our Projects</a>
-                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/partners" data-track-category="navigation_button" data-track-clicks="partners">Partners</a>
-                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/clients" data-track-category="navigation_button" data-track-clicks="clients">Clients</a>
-                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/careers" data-track-category="navigation_button" data-track-clicks="careers">Careers</a> 
-                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/contact" data-track-category="navigation_button" data-track-clicks="careers">Contact Us</a>
+                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/about_us">About Us</a>
+                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/projects">Our Projects</a>
+                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/partners">Partners</a>
+                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/clients">Clients</a>
+                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/contact">Contact Us</a>
             </div>
         </nav>
     </div>

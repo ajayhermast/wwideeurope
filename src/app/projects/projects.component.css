@@ -1,0 +1,22 @@
+.app-project{
+    margin-top: 100px;
+}
+.project-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project-content{
+    padding: 25px;
+    border-right: 1px solid #cacaca;
+}
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
