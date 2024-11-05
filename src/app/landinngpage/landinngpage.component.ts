@@ -1,12 +1,13 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-landinngpage',
   standalone: true,
-  imports: [HeaderComponent,FooterComponent],
+  imports: [HeaderComponent,FooterComponent,CommonModule],
   templateUrl: './landinngpage.component.html',
   styleUrl: './landinngpage.component.css'
 })
@@ -23,14 +24,12 @@ export class LandinngpageComponent  implements OnInit,OnDestroy{
   intervalId: any;
 
   ngOnInit(): void {
-    // Set up an interval to toggle between 'blair' and 'dios'
     this.intervalId = setInterval(() => {
       this.activeElement = this.activeElement === 'blair' ? 'dios' : 'blair';
-    }, 2000); // Toggle every 2 seconds (adjust timing as needed)
+    }, 2000);
   }
 
   ngOnDestroy(): void {
-    // Clear the interval when the component is destroyed to prevent memory leaks
     if (this.intervalId) {
       clearInterval(this.intervalId);
     }
@@ -98,6 +97,9 @@ export class LandinngpageComponent  implements OnInit,OnDestroy{
           this.dots[j].style.background = (j === this.count) ? "#696969" : "#bdbdbd";
       }
   }
+
+
+
   
 
 }

@@ -933,27 +933,6 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
     background: #CCDCFF
 }
 
-.lp-navbar__container {
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 1120px;
-    height: 80px;
-    margin: 0 auto;
-    position: relative
-}
-
-@media (max-width: 1200px) {
-    .lp-navbar__container {
-        max-width:calc(100vw - 80px)
-    }
-}
-
-@media (max-width: 1023px) {
-    .lp-navbar__container {
-        display:none
-    }
-}
-
 .lp-navbar .lp-nav {
     display: -ms-flexbox;
     display: flex;
@@ -1044,50 +1023,9 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 }
 
 
-.lp-navbar .lp-mobile-menu-wrapper {
-    display: none;
-    position: relative;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 72px;
-    max-width: 659px;
-    margin: 0 auto;
-    transition: background 0.75s cubic-bezier(0.19, 1, 0.22, 1),box-shadow 0.75s cubic-bezier(0.19, 1, 0.22, 1)
-}
-
-@media (max-width: 1023px) {
-    .lp-navbar .lp-mobile-menu-wrapper {
-        display:-ms-flexbox;
-        display: flex
-    }
-}
-
-@media (max-width: 717px) {
-    .lp-navbar .lp-mobile-menu-wrapper {
-        max-width:424px
-    }
-}
-
 .lp-navbar__item {
     z-index: 2
 }
-
-.lp-navbar__item--icon {
-    display: none
-}
-
-@media (max-width: 1023px) {
-    .lp-navbar__item--icon {
-        display:block
-    }
-}
-
-@media (max-width: 450px) {
-    .lp-navbar__item--icon {
-        margin-left:30px
-    }
-}
-
 .lp-navbar__icon {
     margin-top: 9px
 }
@@ -1472,7 +1410,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
     font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
     font-weight: 500;
     text-align: center;
-    line-height: 32px
+    line-height: 32px;
 }
 
 @media (min-width: 717px) {
@@ -1523,7 +1461,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
     line-height: 40px;
     margin: 0 auto;
     margin-bottom: 32px;
-    max-width: 324px
+    max-width: 324px;
 }
 
 @media (min-width: 479px) {
@@ -2749,7 +2687,25 @@ button:hover {
 
 
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
 
+.animation {
+    opacity: 0;
+    transform: translateX(-100%); /* Start off-screen */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+.animation.animate {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    opacity: 1;
+}
 
 
 

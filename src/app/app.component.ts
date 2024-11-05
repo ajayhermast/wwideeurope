@@ -12,5 +12,5 @@ import { ClientComponent } from './client/client.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'my-project';
+  title = 'widewurope';
 }
