@@ -20,13 +20,13 @@ export class LandinngpageComponent  implements OnInit,OnDestroy{
   private interval: number = 5000;
   private set: NodeJS.Timeout | undefined;
 
-  activeElement: string = 'blair'; // Start with 'blair'
+  activeElement: string = 'img1'; // Start with 'blair'
   intervalId: any;
 
   ngOnInit(): void {
     this.intervalId = setInterval(() => {
-      this.activeElement = this.activeElement === 'blair' ? 'dios' : 'blair';
-    }, 2000);
+      this.activeElement = this.activeElement === 'img1' ? 'img2' : this.activeElement === 'img2' ? "img3" : this.activeElement === 'img3' ? "img4" : "img1";
+    }, 3000);
   }
 
   ngOnDestroy(): void {

@@ -9,7 +9,7 @@
 
             <!-- Putting this here so that it appears on every landing page -->
 
-            <div class="masthead-cta-container">
+            <div class="masthead-cta-container" style="">
                 <h1 class="masthead-title">
                     Wwideurope Engineering solutions
                 </h1>
@@ -18,39 +18,31 @@
                     <span>About Us</span>
                 </a>
             </div>
-            <div class="masthead-image-container blair" [class.is-active]="activeElement === 'blair'">
+            <div class="masthead-image-container img1" [class.is-active]="activeElement === 'img1'">
                 <picture class="picture-element">
-                    <img class="changeImage" src="../../..//assets/frontFactory.png"
+                    <img class="changeImage" src="../../..//public/assets/frontimg1.jpg" style="height: 700px;"
                         alt="factory background">
                 </picture>
             </div>
-            <div class="masthead-image-container dios" [class.is-active]="activeElement === 'dios'">
+            <div class="masthead-image-container img2" [class.is-active]="activeElement === 'img2'">
                 <picture class="picture-element">
-                    <source
-                        srcset="//cdn2.editmysite.com/images/landing-pages/global/home-com-forward/masthead/dios/dios-l.webp"
-                        type="image/webp" media="(min-width: 1023px)">
-                    <source
-                        srcset="//cdn2.editmysite.com/images/landing-pages/global/home-com-forward/masthead/dios/dios-m.webp"
-                        type="image/webp" media="(min-width: 479px)">
-                    <source
-                        srcset="//cdn2.editmysite.com/images/landing-pages/global/home-com-forward/masthead/dios/dios-s.webp"
-                        type="image/webp" media="(min-width: 375px)">
-                    <source
-                        srcset="//cdn2.editmysite.com/images/landing-pages/global/home-com-forward/masthead/website-s.webp"
-                        type="image/webp">
-                    <source
-                        srcset="//cdn2.editmysite.com/images/landing-pages/global/home-com-forward/masthead/dios/dios-l.png"
-                        media="(min-width: 1023px)">
-                    <source
-                        srcset="//cdn2.editmysite.com/images/landing-pages/global/home-com-forward/masthead/dios/dios-m.png"
-                        media="(min-width: 479px)">
-                    <source
-                        srcset="//cdn2.editmysite.com/images/landing-pages/global/home-com-forward/masthead/dios/dios-s.png"
-                        media="(min-width: 375px)">
-                    <source
-                        srcset="//cdn2.editmysite.com/images/landing-pages/global/home-com-forward/masthead/website-s.png">
-                    <img src="//cdn2.editmysite.com/images/landing-pages/global/home-com-forward/masthead/website-s.png"
-                        alt="Create a website with Weebly’s free website builder.">
+                    
+                    <img  src="../../..//public/assets/frontimg2.jpg" style="height: 700px;"
+                        alt="wideeurope">
+                </picture>
+            </div>
+            <div class="masthead-image-container img3" [class.is-active]="activeElement === 'img3'">
+                <picture class="picture-element">
+                    
+                    <img  src="../../..//public/assets/frontimg3.jpg" style="height: 700px;"
+                        alt="wideeurope">
+                </picture>
+            </div>
+            <div class="masthead-image-container img4" [class.is-active]="activeElement === 'img4'">
+                <picture class="picture-element">
+                    
+                    <img  src="../../..//public/assets/frontimg4.jpg" style="height: 700px;"
+                        alt="wideeurope">
                 </picture>
             </div>
         </div>
@@ -74,7 +66,7 @@
 
             <picture class="themes-image js-unveil is-loaded">
                 <img alt="Customizable webpage designs"
-                    src="..//assets/fourimg.gif">
+                    src="..//public/assets/fourimg.gif">
             </picture>
 
             <div class="bottom-border"></div>
@@ -366,9 +358,9 @@
 
             <div class="container" data-autoplay="true">
                 <div class="slide">
-                    <img class="carouselImage" data-srcset="../../..//assets/factory.jpg"
+                    <img class="carouselImage" data-srcset="../../..//public/assets/factory.jpg"
                     alt="Makers to Merchants: In-person community events for entrepreneurs"
-                    src="../../..//assets/factory.jpg">
+                    src="../../..//public/assets/factory.jpg">
                     <div class="support-description">
                         Factories can produce content in a systematic way, similar to how a factory produces
                         goods. This is called a content factory, and it involves
@@ -379,9 +371,9 @@
                     </a>
                 </div>
                 <div class="slide">
-                            <img class="carouselImage" data-srcset="../../..//assets/workers.jpg"
+                            <img class="carouselImage" data-srcset="../../..//public/assets/workers.jpg"
                             alt="Makers to Merchants: In-person community events for entrepreneurs"
-                            src="../../..//assets/workers.jpg">
+                            src="../../..//public/assets/workers.jpg">
                             <div class="support-description">
                                 Workers design, develop, and test mechanical devices and systems to ensure they work
                                 safely and efficiently. Their work can include:
@@ -392,9 +384,9 @@
                             </a>
                 </div>
                 <div class="slide">
-                        <img class="carouselImage" data-srcset="../../..//assets/ocean.jpg"
+                        <img class="carouselImage" data-srcset="../../..//public/assets/ocean.jpg"
                             alt="Makers to Merchants: In-person community events for entrepreneurs"
-                            src="../../..//assets/ocean.jpg">
+                            src="../../..//public/assets/ocean.jpg">
                     <div class="support-description">
                         Workers design, develop, and test mechanical devices and systems to ensure they work
                         safely and efficiently. Their work can include:
@@ -435,7 +427,7 @@
                     
                     <img 
                         alt="team "
-                        src="../../..//assets/teammembers.png">
+                        src="../../..//public/assets/teammembers.png">
                 </picture>
             </div>
             <div class="cta-section">
