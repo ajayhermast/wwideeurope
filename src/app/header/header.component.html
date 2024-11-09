@@ -1,11 +1,11 @@
-<nav class="js-lp-navbar lp-header__navbar lp-navbar lp-navbar--overlay rm-background is-fixed is-mobile-menu-active" style="">
-    <!-- <div class="lp-navbar__container lp-container">
+<!-- <nav class="js-lp-navbar lp-header__navbar lp-navbar lp-navbar--overlay rm-background is-fixed is-mobile-menu-active" style="">
+    <div class="lp-navbar__container lp-container">
         <a class="lp-navbar__item lp-navbar__item--logo" href="/">
             <div class="lp-navbar__logo lp-logo lp-logo--light" data-track-clicks="logo" data-track-category="navigation_button">
                 <img alt="WWideEuorope" src="..//public/assets/logo.png">
             </div>
         </a> 
-    </div> -->
+    </div>
     <div class="js-lp-mobile-menu lp-mobile-menu-wrapper">
         <div class="lp-navbar__item lp-navbar__item--icon" (click)="toggleNav()">
             <div class="js-menu-icon lp-navbar__icon" data-track-category="navigation_button" data-track-clicks="hamburger">
@@ -28,6 +28,76 @@
             </div>
         </nav>
     </div>
-</nav>
+</nav> -->
+
+<div id="navigation" class="navigation hide" >
+
+    <a class="nav-btn-close" (click)="menuclose()" href="javascript:void(0);"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <ul>
+        <li><a href="/">Home</a></li>
+            <li>
+                <a id="1256" href="/about-us/">About Us</a>
+
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                <ul>
+                    <li><a href="/about-us/our-approach/">Our Approach</a></li>
+                    <li><a href="/about-us/history/">History</a></li>
+                    <li><a href="/about-us/management/">Management</a></li>
+                    <li><a href="/about-us/awards/">Awards</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a id="1280" href="/our-divisions/">Our Divisions</a>
+
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                <ul>
+                    <li><a href="/our-divisions/mechanical-oil-and-gas-division/">Mechanical Oil and Gas Division</a></li>
+                    <li><a href="/our-divisions/electrical-division/">Electrical Division</a></li>
+                    <li><a href="/our-divisions/civil-division-industrial-and-buildings/">Civil Division (Industrial and Buildings)</a></li>
+                    <li><a href="/our-divisions/marine-division/">Marine Division</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a id="1484" href="/projects/">Projects</a>
+
+            </li>
+            <li>
+                <a id="1605" href="/resources/">Resources</a>
+
+            </li>
+            <li>
+                <a id="1289" href="/vendors/">Vendors</a>
+
+            </li>
+            <li>
+                <a id="1302" href="/news-and-highlights/">News and Highlights</a>
+
+            </li>
+            <li>
+                <a id="1293" href="/careers/">Careers</a>
+
+            </li>
+            <li>
+                <a id="1313" href="/contact-us/">Contact Us</a>
+
+            </li>
+    </ul>
+</div>
+
+<header class="header ">
+    <div class="container">
+        <a href="/" class="logo fadeInLeft animated"><img src="..//public/assets/logo.png" alt=""></a>
+        <a href="/" class="logo-subpage wow fadeInLeft animated animated" style="visibility: visible; animation-name: fadeInLeft;"><img src="/media/1237/logo.png" alt=""></a>
+        <a href="javascript:void(0);" class="headicon search-icon fadeInRight animated"><i class="fa fa-search" aria-hidden="true"></i></a>
+        <div class="searchform">
+            <form method="get" action="/search">
+                <input type="search" placeholder="Enter Keywords and press Enter" name="q">
+            </form>
+        </div>
+        <a href="javascript:void(0);" (click)="menuopen()" class="headicon nav-btn fadeInRight animated"><i class="fa fa-bars" aria-hidden="true"></i></a>
 
 
+    </div>
+</header>

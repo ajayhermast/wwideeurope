@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component,HostListener,Inject } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,10 +9,26 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  isDropdownOpen: boolean = false;
+  constructor(@Inject(DOCUMENT) private document: Document) { }
 
-  toggleNav() {
-    this.isDropdownOpen = !this.isDropdownOpen;
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    if (document.body.scrollTop > 20 ||     
+    document.documentElement.scrollTop > 20) {
+      document.getElementsByClassName('header')[0].classList.add('smallhead');
+      document.getElementsByClassName('fadeInUp')[0].classList.add('animated');
+      // document.getElementById('paragraph').classList.add('green');
+    }else{
+      document.getElementsByClassName('header')[0].classList.remove('smallhead');
+    }
   }
+  menuopen(){
+    console.log("hjhhuhhh");
+    document.getElementsByClassName('navigation')[0].classList.add('openMenu');
+    }
+    menuclose(){
+    document.getElementsByClassName('navigation')[0].classList.remove('openMenu');
+    }
+ 
 
 }
