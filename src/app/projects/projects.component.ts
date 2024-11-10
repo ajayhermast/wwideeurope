@@ -7,7 +7,7 @@ import { FooterComponent } from '../footer/footer.component';
   standalone: true,
   imports: [HeaderComponent,FooterComponent],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.css'
+  styleUrls: ['./projects.component.css','..//marketing/marketing.component.css']
 })
 export class ProjectsComponent {
 

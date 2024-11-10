@@ -1,11 +1,4 @@
-<nav class="js-lp-navbar lp-header__navbar lp-navbar lp-navbar--overlay rm-background is-fixed is-mobile-menu-active" style="">
-    <!-- <div class="lp-navbar__container lp-container">
-        <a class="lp-navbar__item lp-navbar__item--logo" href="/">
-            <div class="lp-navbar__logo lp-logo lp-logo--light" data-track-clicks="logo" data-track-category="navigation_button">
-                <img alt="WWideEuorope" src="..//public/assets/logo.png">
-            </div>
-        </a> 
-    </div> -->
+<!-- <nav class="js-lp-navbar lp-header__navbar lp-navbar lp-navbar--overlay rm-background is-fixed is-mobile-menu-active" style="">
     <div class="js-lp-mobile-menu lp-mobile-menu-wrapper">
         <div class="lp-navbar__item lp-navbar__item--icon" (click)="toggleNav()">
             <div class="js-menu-icon lp-navbar__icon" data-track-category="navigation_button" data-track-clicks="hamburger">
@@ -20,7 +13,40 @@
         
         <nav class="lp-mobile-menu lp-nav" style="display: none;" [class.active]="isDropdownOpen">
             <div class="js-nav-link-wrapper">
-                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/about_us">About Us</a>
+                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/about-us">About Us</a>
+                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/our-bussiness">Our Bussiness</a>
+                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/partners">Partners</a>
+                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="marketing-sales-of-plant-equipment">Clients</a>
+                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/contact">Contact Us</a>
+            </div>
+        </nav>
+    </div>
+</nav>
+
+ -->
+<!-- <nav class="js-lp-navbar lp-header__navbar lp-navbar lp-navbar--overlay rm-background is-fixed is-mobile-menu-active" style="">
+    <div class="lp-navbar__container lp-container">
+        <a class="lp-navbar__item lp-navbar__item--logo" href="/">
+            <div class="lp-navbar__logo lp-logo lp-logo--light" data-track-clicks="logo" data-track-category="navigation_button">
+                <img alt="WWideEuorope" src="..//public/assets/logo.png">
+            </div>
+        </a> 
+    </div>
+    <div class="js-lp-mobile-menu lp-mobile-menu-wrapper">
+        <div class="lp-navbar__item lp-navbar__item--icon" (click)="toggleNav()">
+            <div class="js-menu-icon lp-navbar__icon" data-track-category="navigation_button" data-track-clicks="hamburger">
+                <img alt="Menu icon" src="//cdn2.editmysite.com/images/landing-pages/global/shared/navbar/sandwich.svg">
+            </div>
+        </div>
+        <div class="lp-navbar__logo-small lp-logo lp-logo--small lp-logo--light">
+            <a href="/">
+                <img alt="WWideEuorope" height="40" src="..//public/assets/logo.png">
+            </a>
+        </div>
+        
+        <nav class="lp-mobile-menu lp-nav" style="display: none;" [class.active]="isDropdownOpen">
+            <div class="js-nav-link-wrapper">
+                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/about-us">About Us</a>
                 <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/projects">Our Projects</a>
                 <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/partners">Partners</a>
                 <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/clients">Clients</a>
@@ -28,6 +54,54 @@
             </div>
         </nav>
     </div>
-</nav>
+</nav> -->
+
+<div id="navigation" class="navigation hide" >
+
+    <a class="nav-btn-close" (click)="menuclose()" href="javascript:void(0);"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <ul>
+        <li><a href="/">Home</a></li>
+            <li>
+                <a id="1256" href="/about-us/">About Us</a>
+            </li>
+            <li>
+                <a id="1280" href="/our-bussiness/">Our Bussiness</a>
+
+                <i class="fa fa-chevron-down" (click)="opendropdown()"></i>
+                <ul class="dropdownlist">
+                    <li><a href="/marketing-sales-of-plant-equipment/">Marketing & Sales of plant equipment</a></li>
+                    <li><a href="/engineering-design-consultancy/">Engineering Design Consultancy</a></li>
+                    <li><a href="/turbine-maintenance-and-overhauling/">Turbine Maintenance and Overhauling</a></li>
+                    <li><a href="/spare-parts-support/">Spare Parts Support</a></li>
+                 </ul>
+            </li>
+            <li>
+                <a id="1605" href="/partners/">Partners</a>
+                
+            </li>
+            <li>
+                <a id="1484" href="/our-bussiness/">Projects</a>
+
+            </li>
+            <li>
+                <a id="1313" href="/contact/">Contact Us</a>
+
+            </li>
+    </ul>
+</div>
+
+<header class="header ">
+    <div class="container">
+        <a href="/" class="logo fadeInLeft animated"><img src="..//public/assets/logo.png" alt=""></a>
+        <a href="/" class="logo-subpage wow fadeInLeft animated animated" style="visibility: visible; animation-name: fadeInLeft;"><img src="/media/1237/logo.png" alt=""></a>
+       
+        <div class="searchform">
+            <form method="get" action="/search">
+                <input type="search" placeholder="Enter Keywords and press Enter" name="q">
+            </form>
+        </div>
+        <a href="javascript:void(0);" (click)="menuopen()" class="headicon nav-btn fadeInRight animated"><i class="fa fa-bars" aria-hidden="true"></i></a>
 
 
+    </div>
+</header>

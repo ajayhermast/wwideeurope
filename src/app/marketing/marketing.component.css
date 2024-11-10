@@ -1,0 +1,223 @@
+section {
+    padding: 0;
+}
+#subbanner, #map, #project-banner {
+    margin: 130px 0 0 0;
+}
+#subbanner {
+    background: #212121;
+}
+@media (max-width: 1150px) {
+    #subbanner img {
+        max-height: 204px;
+    }
+}
+#subbanner img {
+    position: absolute;
+    right: 0;
+}
+@media (max-width: 1150px) {
+    #subbanner .container {
+        width: 100%;
+        margin: 0;
+        height: 204px;
+    }
+}
+
+
+#subbanner .container {
+    height: 294px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+}
+@media (max-width: 1150px) {
+    .container {
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
+        max-width: none !important;
+    }
+}
+.container {
+    margin: 0 auto;
+    max-width: 1135px;
+    position: relative;
+}
+@media (max-width: 1150px) {
+    #subbanner .container::before {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1150px) {
+    #subbanner .cont {
+        margin: 0 0 0 3%;
+    }
+}
+#subbanner .cont {
+    position: relative;
+}
+
+#secondary-nav {
+    background: #f8f8f8;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+@media (max-width: 1150px) {
+    .container {
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
+        max-width: none !important;
+    }
+}
+.container {
+    margin: 0 auto;
+    max-width: 1135px;
+    position: relative;
+}
+#secondary-nav .subtrigger {
+    /* display: none; */
+}
+@media (max-width: 1250px) {
+    a.subtrigger {
+        color: #fff;
+        font-size: 16px;
+        display: block;
+    }
+}
+@media (max-width: 1250px) {
+    a.subtrigger span {
+        font-size: 39px;
+        display: inline-block;
+    }
+}
+* {
+    margin: 0;
+    outline: none;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+#secondary-nav ul li:first-child {
+    border-left: solid 1px #dfdfdf;
+}
+#secondary-nav li:hover, #secondary-nav li.active {
+    background: #fff;
+}
+#secondary-nav li {
+    display: inline-block;
+    position: relative;
+    border-right: solid 1px #dfdfdf;
+}
+ul li {
+    list-style: none;
+}
+ul li {
+    list-style: none;
+}
+.clr, .clear {
+    clear: both;
+}
+@media (max-width: 1150px) {
+    #subbanner .container {
+        width: 100%;
+        margin: 0;
+        height: 204px;
+    }
+}
+@media (max-width: 1150px) {
+    #subbanner .container::before {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    #subbanner .container::before {
+        width: 100% !important;
+        opacity: .7;
+    }
+}
+@media (max-width: 1150px) {
+    #subbanner .container::before {
+        width: 50%;
+    }
+}
+#subbanner .container:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    z-index: 0;
+    top: 0;
+    width: 40%;
+    background: #212121;
+}
+@media (max-width: 767px) {
+    body {
+        -webkit-text-size-adjust: none;
+    }
+}
+#subbanner h2 {
+    font-size: 36px;
+    font-family: MS700;
+    color: #fff;
+    max-width: 450px;
+}
+@media (max-width: 1150px) {
+    .container {
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
+        max-width: none !important;
+    }
+}
+#secondary-nav .subtrigger {
+    display: none;
+}
+@media (max-width: 1250px) {
+    a.subtrigger {
+        color: #fff;
+        font-size: 16px;
+        display: block;
+    }
+}
+#secondary-nav ul li:first-child {
+    border-left: solid 1px #dfdfdf;
+}
+#secondary-nav li:hover, #secondary-nav li.active {
+    background: #fff;
+}
+#secondary-nav li {
+    display: inline-block;
+    position: relative;
+    border-right: solid 1px #dfdfdf;
+}
+ul li {
+    list-style: none;
+}
+#secondary-nav ul li:first-child {
+    border-left: solid 1px #dfdfdf;
+}
+#secondary-nav li.active a {
+    color: #d0112b;
+}
+#secondary-nav li a {
+    display: block;
+    line-height: 56px;
+    padding: 2px 20px 0 20px;
+    font-family: fantasy;
+    text-transform: uppercase;
+    color: #2e3538;
+    font-size: 14px;
+    text-transform: uppercase;
+}
