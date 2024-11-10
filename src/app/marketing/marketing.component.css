@@ -221,3 +221,57 @@ ul li {
     font-size: 14px;
     text-transform: uppercase;
 }
+
+.page-title {
+    text-transform: uppercase;
+    color: #212121;
+    font-size: 50px;
+    padding: 0 0 10px 0;
+}
+
+h3 {
+    font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    color: #000;
+    font-family: 'MS700', Arial, Helvetica, sans-serif;
+}
+* {
+    margin: 0;
+    outline: none;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.page-title span {
+    font-family: 'MS100';
+}
+.page-title small {
+    font-family: 'MS300';
+    line-height: 27px;
+    font-size: 15px;
+    text-transform: none;
+    display: block;
+    margin: 10px 0;
+}
+.sub-page .contents{
+    font-family: 'MS300';
+    line-height: 27px;
+    font-size: 18px;
+    text-transform: none;
+    display: block;
+    margin: 10px 0;
+}
+@media (max-width: 1050px) {
+    .sub-page{
+        padding: 40px 100px !important;
+    }
+}
+@media (max-width: 600px) {
+    .sub-page{
+        padding: 35px 40px !important;
+    }
+}

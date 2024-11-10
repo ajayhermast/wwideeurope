@@ -1562,9 +1562,9 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
     height: auto
 }
 
-@media (min-width: 375px) {
+@media (max-width: 375px) {
     .masthead-image-container .picture-element img {
-        height:500px !important;
+        height:300px !important;
         /* max-width: 100%; */
         /* width: auto */
     }
