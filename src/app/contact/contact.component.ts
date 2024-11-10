@@ -7,7 +7,7 @@ import { HeaderComponent } from '../header/header.component';
   standalone: true,
   imports: [HeaderComponent,FooterComponent],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.css'
+  styleUrls: ['./contact.component.css','..//marketing/marketing.component.css']
 })
 export class ContactComponent {
 
