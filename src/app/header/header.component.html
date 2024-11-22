@@ -1,14 +1,5 @@
+
 <!-- <nav class="js-lp-navbar lp-header__navbar lp-navbar lp-navbar--overlay rm-background is-fixed is-mobile-menu-active" style="">
-<<<<<<< HEAD
-    <div class="lp-navbar__container lp-container">
-        <a class="lp-navbar__item lp-navbar__item--logo" href="/">
-            <div class="lp-navbar__logo lp-logo lp-logo--light" data-track-clicks="logo" data-track-category="navigation_button">
-                <img alt="WWideEuorope" src="..//public/assets/logo.png">
-            </div>
-        </a> 
-    </div>
-=======
->>>>>>> 1c0fde4 (Nav animation and add a title images 10112024 8:05 AM)
     <div class="js-lp-mobile-menu lp-mobile-menu-wrapper">
         <div class="lp-navbar__item lp-navbar__item--icon" (click)="toggleNav()">
             <div class="js-menu-icon lp-navbar__icon" data-track-category="navigation_button" data-track-clicks="hamburger">
@@ -32,95 +23,44 @@
         </nav>
     </div>
 </nav>
+=======
+<!-- toggle -->
+<div id="navigation" class="navigation hide">
+>>>>>>> 81cad2e (changes in homemain banner, first & second fold frontend)
 
- -->
-<!-- <nav class="js-lp-navbar lp-header__navbar lp-navbar lp-navbar--overlay rm-background is-fixed is-mobile-menu-active" style="">
-    <div class="lp-navbar__container lp-container">
-        <a class="lp-navbar__item lp-navbar__item--logo" href="/">
-            <div class="lp-navbar__logo lp-logo lp-logo--light" data-track-clicks="logo" data-track-category="navigation_button">
-                <img alt="WWideEuorope" src="..//public/assets/logo.png">
-            </div>
-        </a> 
-    </div>
-    <div class="js-lp-mobile-menu lp-mobile-menu-wrapper">
-        <div class="lp-navbar__item lp-navbar__item--icon" (click)="toggleNav()">
-            <div class="js-menu-icon lp-navbar__icon" data-track-category="navigation_button" data-track-clicks="hamburger">
-                <img alt="Menu icon" src="//cdn2.editmysite.com/images/landing-pages/global/shared/navbar/sandwich.svg">
-            </div>
-        </div>
-        <div class="lp-navbar__logo-small lp-logo lp-logo--small lp-logo--light">
-            <a href="/">
-                <img alt="WWideEuorope" height="40" src="..//public/assets/logo.png">
-            </a>
-        </div>
-        
-        <nav class="lp-mobile-menu lp-nav" style="display: none;" [class.active]="isDropdownOpen">
-            <div class="js-nav-link-wrapper">
-                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/about-us">About Us</a>
-                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/projects">Our Projects</a>
-                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/partners">Partners</a>
-                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/clients">Clients</a>
-                <a class="js-nav-link lp-mobile-menu__item lp-nav__item" href="/contact">Contact Us</a>
-            </div>
-        </nav>
-    </div>
-</nav> -->
-
-<div id="navigation" class="navigation hide" >
-
-    <a class="nav-btn-close" (click)="menuclose()" href="javascript:void(0);"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <a class="nav-btn-close" (click)="menuclose()" href="javascript:void(0);"><i class="fa fa-times"
+            aria-hidden="true"></i></a>
     <ul>
         <li><a href="/">Home</a></li>
-            <li>
-                <a id="1256" href="/about-us/">About Us</a>
+        <li>
+            <a id="1256" href="/about-us/">About Us</a>
+        </li>
+        <li>
+            <a id="1280" href="/our-bussiness/">Our Bussiness</a>
 
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                <ul>
-                    <li><a href="/about-us/our-approach/">Our Approach</a></li>
-                    <li><a href="/about-us/history/">History</a></li>
-                    <li><a href="/about-us/management/">Management</a></li>
-                    <li><a href="/about-us/awards/">Awards</a></li>
+            <i class="fa fa-chevron-down" (click)="opendropdown()"></i>
+            <ul class="dropdownlist">
+                <li><a href="/marketing-sales-of-plant-equipment/">Marketing & Sales of plant equipment</a></li>
+                <li><a href="/engineering-design-consultancy/">Engineering Design Consultancy</a></li>
+                <li><a href="/turbine-maintenance-and-overhauling/">Turbine Maintenance and Overhauling</a></li>
+                <li><a href="/spare-parts-support/">Spare Parts Support</a></li>
+            </ul>
+        </li>
+        <li>
+            <a id="1605" href="/partners/">Partners</a>
 
-                </ul>
-            </li>
-            <li>
-                <a id="1280" href="/our-divisions/">Our Divisions</a>
+        </li>
+        <li>
+            <a id="1484" href="/our-bussiness/">Projects</a>
 
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                <ul>
-                    <li><a href="/our-divisions/mechanical-oil-and-gas-division/">Mechanical Oil and Gas Division</a></li>
-                    <li><a href="/our-divisions/electrical-division/">Electrical Division</a></li>
-                    <li><a href="/our-divisions/civil-division-industrial-and-buildings/">Civil Division (Industrial and Buildings)</a></li>
-                    <li><a href="/our-divisions/marine-division/">Marine Division</a></li>
+        </li>
+        <li>
+            <a id="1313" href="/contact/">Contact Us</a>
 
-                </ul>
-            </li>
-            <li>
-                <a id="1484" href="/projects/">Projects</a>
-
-            </li>
-            <li>
-                <a id="1605" href="/resources/">Resources</a>
-
-            </li>
-            <li>
-                <a id="1289" href="/vendors/">Vendors</a>
-
-            </li>
-            <li>
-                <a id="1302" href="/news-and-highlights/">News and Highlights</a>
-
-            </li>
-            <li>
-                <a id="1293" href="/careers/">Careers</a>
-
-            </li>
-            <li>
-                <a id="1313" href="/contact-us/">Contact Us</a>
-
-            </li>
+        </li>
     </ul>
 </div>
+<!-- navbar -->
 
 <header class="header ">
     <div class="container">
@@ -132,8 +72,184 @@
                 <input type="search" placeholder="Enter Keywords and press Enter" name="q">
             </form>
         </div>
-        <a href="javascript:void(0);" (click)="menuopen()" class="headicon nav-btn fadeInRight animated"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <a href="javascript:void(0);" (click)="menuopen()" class="headicon nav-btn fadeInRight animated"><i
+                class="fa fa-bars" aria-hidden="true"></i></a>
 
 
     </div>
 </header>
+
+<!-- banner first fold-->
+
+<section class="main-banner">
+    <div class="tp-banner-container">
+        <div class="forcefullwidth_wrapper_tp_banner" id="rev_slider_1064_1_forcefullwidth"
+            style="position:relative;width:100%;height:auto;margin-top:0px;margin-bottom:0px">
+            <div id="rev_slider_1064_1_wrapper" class="rev_slider_wrapper fullscreen-container"
+                data-alias="photography4export" data-source="gallery"
+                style="background-color: transparent; padding: 0px; margin-top: 0px; margin-bottom: 0px; position: absolute; max-height: none; overflow: visible; height: 595px;  left: 0px;">
+                <!-- START REVOLUTION SLIDER 5.4.1 fullscreen mode -->
+                <div id="rev_slider_1064_1"
+                    class="rev_slider fullscreenbanner revslider-initialised tp-simpleresponsive rev_redraw_on_blurfocus"
+                    style="max-height: none; margin-top: 0px; margin-bottom: 0px; height: 100%;" data-version="5.4.1"
+                    data-slideactive="rs-30110">
+                    <ul class="tp-revslider-mainul"
+                        style="visibility: visible; display: block; overflow: hidden; width: 100%; height: 100%; max-height: none;">
+                        <li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-thumb=""
+                            data-saveperformance="on" data-title="" class="tp-revslider-slidesli active-revslide"
+                            style="width: 100%; height: 100%; overflow: hidden; z-index: 20; visibility: inherit; opacity: 1; background-color: rgba(255, 255, 255, 0);">
+                            <!-- MAIN IMAGE -->
+                            <div class="slotholder"
+                                style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+
+                                <div class="tp-bgimg defaultimg " data-bgcolor="undefined"
+                                    style="background-repeat: no-repeat; background-image: url(..//public/assets/home-banner.jpg); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;"
+                                    src=""></div>
+                            </div>
+                            <!-- LAYERS -->
+                            <div class="tp-parallax-wrap"
+                                style="position: absolute; display: block; visibility: visible; left: 65px; top: 104px; z-index: 5;">
+                                <div class="tp-loop-wrap" style="position:absolute;display:block;;">
+                                    <div class="tp-mask-wrap"
+                                        style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);">
+                                        <div class="tp-caption heading-one   tp-resizeme" id="slide-2989-layer-4"
+                                            data-x="left" data-hoffset="['0','0','0','0']" data-y="center"
+                                            data-voffset="['-130,'-180','-90','-160']"
+                                            data-fontsize="['40','40','35','30']" data-lineheight="['','','','']"
+                                            data-width="none" data-height="100" data-whitespace="nowrap"
+                                            data-type="text" data-responsive_offset="on"
+                                            data-frames="[{&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;speed&quot;:1000,
+                         &quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:250,&quot;ease&quot;:&quot;Power4.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;to&quot;:&quot;y:[100%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                                            data-textalign="['center','center','center','center']"
+                                            data-paddingtop="[40,40,40,40]" data-paddingright="[0,0,0,0]"
+                                            data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                            style="z-index: 5; white-space: nowrap; visibility: inherit; transition: none; text-align: center; line-height: 0px; border-width: 0px; margin: 0px; padding: 30px 0px 0px; letter-spacing: 0px; font-weight: 400; font-size: 26px; min-height: 75px; min-width: 0px; max-height: 75px; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">
+                                            Targeting Our Future</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tp-parallax-wrap"
+                                style="position: absolute; display: block; visibility: visible; left: 65px; top: 157px; z-index: 6;">
+                                <div class="tp-loop-wrap" style="position:absolute;display:block;;">
+                                    <div class="tp-mask-wrap"
+                                        style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);">
+                                        <div class="tp-caption desc tp-resizeme" id="slide-2989-layer-1" data-x="left"
+                                            data-hoffset="['0','0','0','0']" data-y="center"
+                                            data-voffset="['-90','-50','-120','-120']" data-width="none"
+                                            data-height="none" data-whitespace="nowrap" data-type="text"
+                                            data-responsive_offset="on"
+                                            data-frames="[{&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;speed&quot;:2000,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:750,&quot;ease&quot;:&quot;Power4.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;to&quot;:&quot;y:[100%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                                            data-textalign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                            data-paddingleft="[0,0,0,0]"
+                                            style="z-index: 6; white-space: nowrap; visibility: inherit; transition: none; text-align: left; line-height: 37px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 22px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">
+                                            <p
+                                                style="transition: none; text-align: inherit; line-height: 18px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 22px;">
+                                                Leading single source EPC contractor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <div class="tp-bannertimer tp-bottom"
+                        style="visibility: hidden; width: 3.33333%; transform: translate3d(0px, 0px, 0px);"></div>
+                    <div class="tp-loader off" style="display: none;">
+                        <div class="dot1"></div>
+                        <div class="dot2"></div>
+                        <div class="bounce1"></div>
+                        <div class="bounce2"></div>
+                        <div class="bounce3"></div>
+                    </div>
+                    <div class="tp-bullets hesperiden horizontal nav-pos-hor-center nav-pos-ver-bottom nav-dir-horizontal"
+                        style="width: 82.2px; height: 16.8px; top: 100%; transform: matrix(1, 0, 0, 1, -41, -107); left: 50%;">
+                        <div class="tp-bullet selected" style="left: 0px; top: 0px;"></div>
+                        <div class="tp-bullet" style="left: 21.8px; top: 0px;"></div>
+                        <div class="tp-bullet" style="left: 43.6px; top: 0px;"></div>
+                        <div class="tp-bullet" style="left: 65.4px; top: 0px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tp-fullwidth-forcer" style="width: 100%; height: 595.4px;"></div>
+        </div>
+    </div>
+    <div id="about-home" class="about-home">
+        <div class="container wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+            <h2>Since <strong>1975</strong></h2>
+            <p>TARGET Engineering Construction Company is a leading EPC contractor offering in-house services for major
+                construction disciplines in onshore and offshore areas.&nbsp;<a
+                    data-udi="umb://document/2b5065cc12c447618fdc2c3f93511fad" href="/about-us/" title="About Us">READ
+                    MORE</a></p>
+        </div>
+    </div>
+</section>
+
+
+<!-- second fold -->
+
+<section id="featured-projects" class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;height:587px">
+    <ul class="recent-award-carousel" style="height: 100%;">
+        <li class="itme" style="background-image:url(..//public/assets/target_awards.jpg);height: 100%;" >
+            <div class="container">
+                <div class="dets">
+                    <div>
+                        <div>
+                            <h4>Recently Awarded</h4>
+                            <h3>HABSHAN &amp; BAB Control Systems Upgrade Project</h3>
+                            <p>Engineering, Procurement and Construction Work related to Hbshan Plant
+                                Control System Upgrades</p>
+                            <a href="https://www.target.ae/projects/habshan-bab-control-systems-upgrade-project/"
+                                class="btn btn-white">VIEW ALL</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clr"></div>
+            </div>
+
+        </li>
+        <div class="owl-controls">
+            <div class="owl-dots">
+                <div class="owl-dot"><span></span></div>
+                <div class="owl-dot"><span></span></div>
+                <div class="owl-dot active"><span></span></div>
+                <div class="owl-dot"><span></span></div>
+                <div class="owl-dot"><span></span></div>
+            </div>
+        </div>
+    </ul>
+</section>
+
+<!-- third fold -->
+<section id="cap-home" class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+    <h4>Our Divisions</h4>
+    <div class="container">
+
+        <ul>
+                <li>
+                    <a href="">
+                        <img src="..//public/assets/frontimg1.jpg" alt=""><span>Mechanical Oil and Gas Division</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="..//public/assets/frontimg2.jpg" alt=""><span>Electrical Division</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="..//public/assets/frontimg3.jpg" alt=""><span>Civil Division (Industrial and Buildings)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="..//public/assets/frontimg4.jpg" alt=""><span>Marine Division</span>
+                    </a>
+                </li>
+
+            <div class="clr"></div>
+        </ul>
+    </div>
+    <a href="/capabilities" class="btn btn2">VIEW ALL Our Divisions</a>
+</section>
