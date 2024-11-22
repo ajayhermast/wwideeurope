@@ -1564,9 +1564,9 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 
 @media (min-width: 375px) {
     .masthead-image-container .picture-element img {
-        height:330px;
-        max-width: 100%;
-        width: auto
+        height:500px !important;
+        /* max-width: 100%; */
+        /* width: auto */
     }
 }
 
@@ -2655,6 +2655,7 @@ button:hover {
         height: 400PX;
         object-fit: cover; 
     }
+
   }
   
   /* Medium Screens (Tablets and smaller laptops) */
@@ -2706,7 +2707,17 @@ button:hover {
     animation: 1s ease-out 0s 1 slideInFromLeft;
     opacity: 1;
 }
+.picture-element img{
+    height: 600px !important;
+}
 
+@media (max-width: 500) {
+    .picture-element img {
+        height:260px !important;
+        /* max-width: 100%; */
+        /* width: auto */
+    }
+}
 
 
 .fadeInUp {

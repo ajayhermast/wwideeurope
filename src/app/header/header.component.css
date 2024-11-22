@@ -1572,3 +1572,9 @@ position: fixed;
 .openMenu{
     display: block;
 }
+.show{
+    display: block !important;
+}
+.dropdownlist{
+    transition: 2s ;
+}

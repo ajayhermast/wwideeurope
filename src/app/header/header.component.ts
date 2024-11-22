@@ -23,12 +23,12 @@ export class HeaderComponent {
     }
   }
   menuopen(){
-    console.log("hjhhuhhh");
     document.getElementsByClassName('navigation')[0].classList.add('openMenu');
     }
     menuclose(){
     document.getElementsByClassName('navigation')[0].classList.remove('openMenu');
     }
- 
-
+    opendropdown(){
+      document.getElementsByClassName('dropdownlist')[0].classList.toggle('show')
+    }
 }

@@ -8,7 +8,7 @@ import jQuery  from "jquery";
   standalone: true,
   imports: [HeaderComponent,FooterComponent],
   templateUrl: './who-we-are.component.html',
-  styleUrl: './who-we-are.component.css'
+  styleUrls: ['./who-we-are.component.css','..//marketing/marketing.component.css']
 })
 export class WhoWeAreComponent {
   constructor(private el: ElementRef, private renderer: Renderer2) {}
