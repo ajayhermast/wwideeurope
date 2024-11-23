@@ -1,0 +1,43 @@
+.cap-list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 70px 0 0 0;
+    max-width: 790px;
+}
+.cap-list li {
+    padding: 0 20px 40px;
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+ul li {
+    list-style: none;
+}
+
+.cap-list img {
+    display: block;
+    margin-bottom: 13px;
+    width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+img {
+    max-width: 100%;
+}
+.cap-list h3 {
+    font-size: 16px;
+    color: #0b597e;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+a:hover img{
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+/* _________________________new design ____________________________________ */
+

@@ -1,15 +1,15 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit ,HostListener,Inject,ViewChild, ElementRef} from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
 import { CommonModule } from '@angular/common';
-
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-landinngpage',
   standalone: true,
   imports: [HeaderComponent,FooterComponent,CommonModule],
   templateUrl: './landinngpage.component.html',
-  styleUrl: './landinngpage.component.css'
+  styleUrls: ['./landinngpage.component.css','../app.component.css']
 })
 export class LandinngpageComponent  implements OnInit,OnDestroy{
   private slides: HTMLCollectionOf<HTMLElement>;
@@ -34,7 +34,7 @@ export class LandinngpageComponent  implements OnInit,OnDestroy{
       clearInterval(this.intervalId);
     }
   }
-  constructor() {
+  constructor(@Inject(DOCUMENT) private document: Document) {
       this.slides = document.getElementsByClassName("slide") as HTMLCollectionOf<HTMLElement>;
       this.indicator = document.getElementById("indicator");
       this.dots = document.getElementsByClassName("dots") as HTMLCollectionOf<HTMLElement>;
@@ -100,6 +100,35 @@ export class LandinngpageComponent  implements OnInit,OnDestroy{
 
 
 
+  // @ViewChild('fadeInElement') fadeInElement: ElementRef | undefined;
+  // @HostListener('window:scroll', [])
+  // onWindowScroll(): void {
+  //   if (this.isElementInViewport(this.fadeInElement?.nativeElement)) {
+  //     this.fadeInElement?.nativeElement.classList.add('animated');
+  //   }
+  // }
+  // private isElementInViewport(element: HTMLElement): boolean {
+  //   if (!element) return false;
+  //   const rect = element.getBoundingClientRect();
+  //   return rect.top >= 0 && rect.bottom <= window.innerHeight;
+  // }
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    // Select all elements with the class 'contentToReveal'
+    const elements = document.querySelectorAll('.fadeInUp');
+
+    elements.forEach((element) => {
+      const rect = element.getBoundingClientRect();
+
+      // Check if the element is within the viewport
+      if (rect.top < window.innerHeight && rect.bottom >= 0) {
+        // Add the 'visible' class if it’s not already present
+        if (!element.classList.contains('animated')) {
+          element.classList.add('animated');
+        }
+      }
+    });
+  }
   
 
 }
