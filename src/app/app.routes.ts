@@ -10,6 +10,7 @@ import { MarketingComponent } from './marketing/marketing.component';
 import { DesignComponent } from './design/design.component';
 import { TurbineComponent } from './turbine/turbine.component';
 import { SparepartComponent } from './sparepart/sparepart.component';
+import { OurbussinessComponent } from './ourbussiness/ourbussiness.component';
 
 export const routes: Routes = [
     {
@@ -29,7 +30,7 @@ export const routes: Routes = [
         component:PartnersComponent
     },
     {
-        path: 'our-bussiness',
+        path: 'our-projects',
         component: ProjectsComponent
     },
     {
@@ -47,6 +48,9 @@ export const routes: Routes = [
     {
         path:"spare-parts-support",
         component:SparepartComponent
+    },   {
+        path:"our-bussiness",
+        component:OurbussinessComponent 
     },
       
     

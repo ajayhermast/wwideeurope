@@ -11,7 +11,7 @@
 .icon {
     display: inline-block;
     vertical-align: top;
-    font-family: 'w-icons';
+    
     font-size: 32px;
     speak: none;
     font-style: normal;
@@ -46,7 +46,7 @@
 [data-icon-before]:before {
     display: inline-block;
     vertical-align: top;
-    font-family: 'w-icons';
+    
     font-size: 32px;
     speak: none;
     font-style: normal;
@@ -66,7 +66,7 @@
 [data-icon-after]:after {
     display: inline-block;
     vertical-align: top;
-    font-family: 'w-icons';
+    
     font-size: 32px;
     speak: none;
     font-style: normal;
@@ -84,7 +84,7 @@
 }
 
 html {
-    font-family: sans-serif;
+    
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -240,7 +240,7 @@ html {
 .btn,button,input[type="button"],input[type="reset"],input[type="submit"] {
     position: relative;
     padding: 0 20px;
-    font-family: "brandon-grotesque","Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-size: 14px;
     font-weight: 600;
     line-height: 44px;
@@ -413,7 +413,7 @@ a:active,a:focus {
 [data-icon-after]:after {
     display: inline-block;
     vertical-align: top;
-    font-family: 'w-icons';
+    
     font-size: 32px;
     speak: none;
     font-style: normal;
@@ -774,7 +774,7 @@ a:active,a:focus {
 }
 
 @font-face {
-    font-family: 'w-icons';
+    
     font-style: normal;
     font-display: fallback;
     font-weight: 400;
@@ -841,21 +841,7 @@ a:active,a:focus {
 
 
 
-@font-face {
-    font-family: SQMarket;
-    font-style: normal;
-    font-display: fallback;
-    font-weight: 400;
-    src: url("/fonts/SQ_Market/sqmarket-regular.woff2") format("woff2"),url("/fonts/SQ_Market/sqmarket-regular.woff") format("woff")
-}
 
-@font-face {
-    font-family: SQMarket-Medium;
-    font-style: normal;
-    font-display: fallback;
-    font-weight: 500;
-    src: url("/fonts/SQ_Market/sqmarket-medium.woff2") format("woff2"),url("/fonts/SQ_Market/sqmarket-medium.woff") format("woff")
-}
 
 .lp-navbar-spacer {
     height: 70px
@@ -887,7 +873,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 }
 
 .lp-navbar {
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     width: 100%;
     transition: background-color 0.2s ease-in;
     top: 0;
@@ -909,7 +895,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
     border-radius: 4px;
     color: #3374FF;
     font-size: 16px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: 500;
     box-shadow: none;
     letter-spacing: initial;
@@ -993,7 +979,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
     align-items: center;
     color: #2F3337;
     font-size: 16px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: 500;
     margin-left: auto;
     margin-right: 48px
@@ -1013,7 +999,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 .lp-navbar__item--actions #login-button {
     color: #2F3337;
     font-size: 16px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: 500;
     margin-right: 16px
 }
@@ -1112,7 +1098,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
     text-transform: none;
     letter-spacing: normal;
     font-size: 14px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: 500;
     box-shadow: none
 }
@@ -1173,7 +1159,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
     width: 650px;
     display: -ms-flexbox;
     display: flex;
-    font-family: SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif
+    
 }
 
 @media (max-width: 745px) {
@@ -1233,7 +1219,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
     border-radius: 4px;
     color: #3374FF;
     font-size: 16px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: 500;
     box-shadow: none;
     letter-spacing: initial;
@@ -1264,7 +1250,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
     -ms-grid-row-align: center;
     align-self: center;
     color: #3374FF;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-size: 16px
 }
 
@@ -1398,7 +1384,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 .section-text {
     color: #1B2126;
     font-size: 16px;
-    font-family: SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    ;
     font-weight: normal;
     text-align: center;
     line-height: 28px
@@ -1407,7 +1393,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 .section-heading-text {
     color: #2F3337;
     font-size: 22px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: 500;
     text-align: center;
     line-height: 32px;
@@ -1454,7 +1440,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 
 .masthead-title {
     color: #2F3337;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-size: 32px;
     font-weight: 500;
     text-align: center;
@@ -1500,7 +1486,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 
 .masthead-main-cta span {
     font-size: 16px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     text-align: center;
     letter-spacing: 0;
     color: #fff
@@ -1512,7 +1498,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 
 .masthead-sub-cta {
     font-size: 16px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: 500;
     text-align: center;
     letter-spacing: 0;
@@ -1652,7 +1638,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
     color: #2F3337;
     line-height: 32px;
     font-size: 22px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: 500;
     margin: auto
 }
@@ -1669,7 +1655,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
     width: 312px;
     color: #2F3337;
     font-size: 16px;
-    font-family: SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    ;
     font-weight: normal;
     line-height: 28px;
     margin: auto;
@@ -1706,7 +1692,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
     border-radius: 3px;
     color: #FFFFFF;
     font-size: 16px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: 500;
     text-align: center;
     letter-spacing: 0;
@@ -1721,7 +1707,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 .themes-container .themes-heading-and-cta .button-container .learn-more {
     color: #3374FF;
     font-size: 16px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: 500;
     text-align: left;
     letter-spacing: 0;
@@ -1841,7 +1827,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 
 .weebly-square .button-container {
     font-size: 16px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: 500;
     text-align: center;
     letter-spacing: 0
@@ -1971,7 +1957,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 .business-community .text-container .section-text-community {
     color: #70767C;
     font-size: 12px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
@@ -2045,7 +2031,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 
 .business-community .business-community-scroller .learn-more {
     font-size: 16px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: 500;
     text-align: center;
     letter-spacing: 0;
@@ -2063,7 +2049,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 .business-community .business-community-scroller .support-description {
     color: #2F3337;
     font-size: 18px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: 500;
     text-align: center;
     line-height: 24px;
@@ -2265,7 +2251,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
     border-radius: 4px;
     color: #FFFFFF;
     font-size: 16px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: 500;
     text-align: center;
     letter-spacing: 0;
@@ -2485,7 +2471,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 .user-journey .user-journey-section .journey-title {
     color: #2F3337;
     font-size: 16px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: 500;
     text-align: left;
     letter-spacing: 0;
@@ -2501,7 +2487,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 .user-journey .user-journey-section .journey-text {
     color: #3E4348;
     font-size: 14px;
-    font-family: SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    ;
     font-weight: normal;
     text-align: left;
     letter-spacing: 0;
@@ -2518,7 +2504,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 .user-journey .user-journey-section .journey-cta {
     color: #3374FF;
     font-size: 16px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: 500;
     text-align: left;
     letter-spacing: 0;
@@ -2543,7 +2529,7 @@ html #homepage-com-forward {
     max-width: 1680px;
     margin: 0 auto;
     background-color: white;
-    font-family: SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    ;
     overflow-x: hidden
 }
 
@@ -2571,7 +2557,6 @@ html #homepage-com-forward picture {
 /* -----------------------------------CARASOAL--------------------------------------- */
 body {
     margin: 0;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -2735,3 +2720,39 @@ button:hover {
     /* margin-top: 650px; */
     width: 100%;
 }
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.fadeInUp {
+    visibility: visible;
+    animation-name: fadeInUp;
+}
+.animated {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+/* @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  } */
+   
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0); /* Start 20px below */
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0); /* End at normal position */
+      }
+  }
+   

@@ -1,6 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
-
+@import url('../app.component.css');
 
 /* saran styles */
 
@@ -255,7 +254,7 @@ position: fixed;
 }
 .navigation ul .fa-chevron-down  {
 	content: "\f107";
-	font-family:'FontAwesome';
+	
 	line-height: 30px; 
 	font-size:16px; 
 	text-align:center;
@@ -284,7 +283,6 @@ position: fixed;
 	font-size:16px;
 	text-transform:uppercase;
 	color:#fff;
-	font-family:'MS300';
 	display:block;
 }
 .navigation ul li > a{  
@@ -308,7 +306,7 @@ position: fixed;
 .navigation ul li a{  
 	text-transform:uppercase;
 	color:#fff;
-	font-family:'MS300';
+	
 	display:block;
 }
 .hide{
@@ -324,8 +322,6 @@ position: fixed;
     transition: 2s ;
 }
 #navigation a{
-
-  font-family: "Edu AU VIC WA NT Pre", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;

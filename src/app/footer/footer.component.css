@@ -11,7 +11,7 @@
 .icon {
     display: inline-block;
     vertical-align: top;
-    font-family: 'w-icons';
+    
     font-size: 32px;
     speak: none;
     font-style: normal;
@@ -46,7 +46,7 @@
 [data-icon-before]:before {
     display: inline-block;
     vertical-align: top;
-    font-family: 'w-icons';
+    
     font-size: 32px;
     speak: none;
     font-style: normal;
@@ -66,7 +66,7 @@
 [data-icon-after]:after {
     display: inline-block;
     vertical-align: top;
-    font-family: 'w-icons';
+    
     font-size: 32px;
     speak: none;
     font-style: normal;
@@ -84,7 +84,7 @@
 }
 
 html {
-    font-family: sans-serif;
+    
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -180,8 +180,6 @@ html {
     display: -ms-flexbox;
     display: flex;
     display: inline;
-    zoom:1;-ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     position: relative;
@@ -230,17 +228,11 @@ html {
     flex: 1 1 auto
 }
 
-@media (min-width: 992px) {
-    .grid__col-md-2 {
-        width:16.66667%;
-        width: 16.56667%
-    }
-}
 
 .btn,button,input[type="button"],input[type="reset"],input[type="submit"] {
     position: relative;
     padding: 0 20px;
-    font-family: "brandon-grotesque","Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-size: 14px;
     font-weight: 600;
     line-height: 44px;
@@ -364,7 +356,7 @@ a:active,a:focus {
 [data-icon-after]:after {
     display: inline-block;
     vertical-align: top;
-    font-family: 'w-icons';
+    
     font-size: 32px;
     speak: none;
     font-style: normal;
@@ -668,7 +660,7 @@ a:active,a:focus {
 }
 
 @font-face {
-    font-family: 'w-icons';
+    
     font-style: normal;
     font-display: fallback;
     font-weight: 400;
@@ -735,21 +727,6 @@ a:active,a:focus {
 
 
 
-@font-face {
-    font-family: SQMarket;
-    font-style: normal;
-    font-display: fallback;
-    font-weight: 400;
-    src: url("/fonts/SQ_Market/sqmarket-regular.woff2") format("woff2"),url("/fonts/SQ_Market/sqmarket-regular.woff") format("woff")
-}
-
-@font-face {
-    font-family: SQMarket-Medium;
-    font-style: normal;
-    font-display: fallback;
-    font-weight: 500;
-    src: url("/fonts/SQ_Market/sqmarket-medium.woff2") format("woff2"),url("/fonts/SQ_Market/sqmarket-medium.woff") format("woff")
-}
 
 .lp-navbar-spacer {
     height: 70px
@@ -781,7 +758,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 }
 
 .lp-navbar {
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     width: 100%;
     transition: background-color 0.2s ease-in;
     top: 0;
@@ -803,7 +780,6 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
     border-radius: 4px;
     color: #3374FF;
     font-size: 16px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
     font-weight: 500;
     box-shadow: none;
     letter-spacing: initial;
@@ -927,7 +903,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 .lp-navbar .lp-mobile-menu__more::after {
     display: inline-block;
     vertical-align: top;
-    font-family: 'w-icons';
+    
     font-size: 32px;
     speak: none;
     font-style: normal;
@@ -986,7 +962,6 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
     text-transform: none;
     letter-spacing: normal;
     font-size: 14px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
     font-weight: 500;
     box-shadow: none
 }
@@ -1068,7 +1043,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
     position: relative;
     -ms-flex-pack: center;
     justify-content: center;
-    font-family: SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-size: 16px;
     line-height: 24px;
     color: white;
@@ -1109,7 +1084,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 
 .cyber-monday-banner-container .cyber-monday-banner-text .cyber-monday-banner-deal-statement {
     letter-spacing: 1.5px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 500;
@@ -1140,7 +1115,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 
 .cyber-monday-banner-container .cyber-monday-banner-text .cyber-monday-banner-cta {
     text-decoration: underline;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     letter-spacing: 0
 }
 
@@ -1207,7 +1182,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 .section-text {
     color: #1B2126;
     font-size: 16px;
-    font-family: SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: normal;
     text-align: center;
     line-height: 28px
@@ -1228,7 +1203,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 
 .masthead-sub-cta {
     font-size: 16px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: 500;
     text-align: center;
     letter-spacing: 0;
@@ -1430,7 +1405,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
     border-radius: 4px;
     color: #FFFFFF;
     font-size: 16px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: 500;
     text-align: center;
     letter-spacing: 0;
@@ -1626,7 +1601,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 .user-journey .user-journey-section .journey-title {
     color: #2F3337;
     font-size: 16px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: 500;
     text-align: left;
     letter-spacing: 0;
@@ -1642,7 +1617,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 .user-journey .user-journey-section .journey-text {
     color: #3E4348;
     font-size: 14px;
-    font-family: SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: normal;
     text-align: left;
     letter-spacing: 0;
@@ -1659,7 +1634,7 @@ body:not(.no-scroll) #homepage .lp-navbar.rm-background:not(.is-fixed):not(.is-m
 .user-journey .user-journey-section .journey-cta {
     color: #3374FF;
     font-size: 16px;
-    font-family: SQMarket-Medium,SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     font-weight: 500;
     text-align: left;
     letter-spacing: 0;
@@ -1684,7 +1659,7 @@ html #homepage-com-forward {
     max-width: 1680px;
     margin: 0 auto;
     background-color: white;
-    font-family: SQMarket,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    
     overflow-x: hidden
 }
 
@@ -1711,4 +1686,13 @@ html #homepage-com-forward picture {
     max-width: 1680px;
     right: 0;
     margin: 0 auto
+}
+
+@media (max-width: 660px) {
+    .lp-footer__grid.grid {
+        display: block !important;
+    }
+    .lp-footer__grid .js-footer-toggle.grid__cell{
+        text-align: left !important;
+    }
 }
