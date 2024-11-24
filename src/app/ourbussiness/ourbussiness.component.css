@@ -1,8 +1,7 @@
 .cap-list {
-    padding-bottom: 50px !important;
     list-style: none;
     margin: 0 auto;
-    padding: 70px 0 0 0;
+    padding: 70px 50px 50px 50px;
     max-width: 790px;
     grid-template-columns: auto auto;
     display: grid;
