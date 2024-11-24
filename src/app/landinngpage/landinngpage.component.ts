@@ -146,19 +146,6 @@ export class LandinngpageComponent  implements OnInit,OnDestroy{
   }
 
 
-
-  // @ViewChild('fadeInElement') fadeInElement: ElementRef | undefined;
-  // @HostListener('window:scroll', [])
-  // onWindowScroll(): void {
-  //   if (this.isElementInViewport(this.fadeInElement?.nativeElement)) {
-  //     this.fadeInElement?.nativeElement.classList.add('animated');
-  //   }
-  // }
-  // private isElementInViewport(element: HTMLElement): boolean {
-  //   if (!element) return false;
-  //   const rect = element.getBoundingClientRect();
-  //   return rect.top >= 0 && rect.bottom <= window.innerHeight;
-  // }
   @HostListener('window:scroll', [])
   onWindowScroll() {
     // Select all elements with the class 'contentToReveal'
@@ -174,6 +161,25 @@ export class LandinngpageComponent  implements OnInit,OnDestroy{
           element.classList.add('animated');
         }
       }
+    });
+  }
+  ngAfterViewInit(): void {
+    // Select all elements with the 'fadeInUp' class
+    const elements = document.querySelectorAll('.fadeInUp');
+
+    // Create the Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animated');
+          observer.unobserve(entry.target); // Stop observing once animated
+        }
+      });
+    }, { threshold: 0.1 }); // Trigger when 10% of the element is visible
+
+    // Observe each element
+    elements.forEach((element) => {
+      observer.observe(element);
     });
   }
   
