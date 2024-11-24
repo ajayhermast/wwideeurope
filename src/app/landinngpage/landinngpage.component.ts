@@ -17,17 +17,64 @@ export class LandinngpageComponent  implements OnInit,OnDestroy{
   private dots: HTMLCollectionOf<HTMLElement>;
   private autoplay: string | null;
   private count: number = 0;
-  private interval: number = 5000;
+  private interval: number = 1000;
   private set: NodeJS.Timeout | undefined;
 
   activeElement: string = 'img1'; // Start with 'blair'
   intervalId: any;
 
   ngOnInit(): void {
-    this.intervalId = setInterval(() => {
-      this.activeElement = this.activeElement === 'img1' ? 'img2' : this.activeElement === 'img2' ? "img3" : this.activeElement === 'img3' ? "img4" : "img1";
-    }, 3000);
+    const images = [
+      document.getElementById('img1'),
+      document.getElementById('img2'),
+      document.getElementById('img3'),
+      document.getElementById('img4'),
+    ];
+    
+    if (images.every(img => img)) {
+      let currentIndex = 0; // Track the current image index
+      const totalImages = images.length;
+    
+      setInterval(() => {
+        // Remove 'show' class from all images
+        images.forEach(img => {
+          if (img) {
+            img.classList.remove('show');
+          }
+        });
+    
+        // Add 'show' class to the current image
+        const currentImage = images[currentIndex];
+        if (currentImage) {
+          currentImage.classList.add('show');
+        }
+    
+        // Move to the next image index
+        currentIndex = (currentIndex + 1) % totalImages; // Loop back to the first image
+      }, 3000); // Change image every 2 seconds
+    }
+    const slides = document.querySelectorAll<HTMLImageElement>('.slide');
+    const totalSlides = slides.length;
+    let curIndex = 0;
+    
+    const autoSlide = () => {
+      // Move the current slide out of view
+      slides[curIndex].classList.remove('active');
+      slides[curIndex].classList.add('exiting');
+    
+      // Calculate the next slide index
+      curIndex = (curIndex + 1) % totalSlides;
+    
+      // Move the next slide into view
+      slides[curIndex].classList.remove('exiting');
+      slides[curIndex].classList.add('active');
+    };
+    
+    // Start auto-sliding every 1 second
+    setInterval(autoSlide, 3000);
+
   }
+  
 
   ngOnDestroy(): void {
     if (this.intervalId) {
