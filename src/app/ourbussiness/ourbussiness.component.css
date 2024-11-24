@@ -1,4 +1,5 @@
 .cap-list {
+    padding-bottom: 50px !important;
     list-style: none;
     margin: 0 auto;
     padding: 70px 0 0 0;
@@ -30,8 +31,9 @@ ul li a{
     height: 100%;
     cursor: pointer;
     transform: scale(1);
-    border: 2px solid #044962;
+    border: 2px solid #b4d1db;
     border-radius: 5px;
+    box-shadow: 3px 1px 4px 1px #003859;
 }
 
 .cap-list img {
