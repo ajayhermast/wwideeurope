@@ -47,3 +47,33 @@ h1, h2, h3, h4, h5, h6 {
         padding: 35px 40px !important;
     }
 }
+.fadeInUp {
+    visibility: hidden;
+    /* animation-name: fadeInUp; */
+}
+.animated {
+    visibility: visible;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @media (max-width: 1150px) {
+    .add-container {
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
+        max-width: none !important;
+    }
+}

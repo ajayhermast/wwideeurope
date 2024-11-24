@@ -194,14 +194,16 @@ position: fixed;
     animation-name: fadeInRight;
 }
 .fadeInUp {
-    visibility: visible;
-    animation-name: fadeInUp;
+    visibility: hidden;
+    /* animation-name: fadeInUp; */
 }
 .animated {
+    visibility: visible;
+    animation-name: fadeInUp;
     animation-duration: 1s;
     animation-fill-mode: both;
 }img {
-    max-width: 80px;
+    max-width: 50px;
 }
 @keyframes fadeInUp {
     0% {
@@ -464,9 +466,7 @@ position: fixed;
         max-width: none !important;
     }
 }
-.fadeInUp {
-    animation-name: fadeInUp;
-}
+
 .container {
     margin: 0 auto;
     max-width: 1135px;
@@ -665,3 +665,9 @@ h4 {
   }
   
 
+.bussiness-box ul li:hover{
+    cursor: pointer;
+    transition: 1s;
+    background-color: #196490;
+    border: 1px solid rgb(212, 212, 212);
+}
