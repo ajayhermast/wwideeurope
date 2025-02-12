@@ -44,9 +44,7 @@ ul li a{
     transition: all 0.3s;
     position: relative;
 }
-img {
-    max-width: 100%;
-}
+
 .cap-list h3 {
     font-size: 16px;
     color: #0b597e;

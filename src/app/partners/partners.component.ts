@@ -7,7 +7,7 @@ import { FooterComponent } from '../footer/footer.component';
   standalone: true,
   imports: [HeaderComponent,FooterComponent],
   templateUrl: './partners.component.html',
-  styleUrls: ['..//client/client.component.css','..//marketing/marketing.component.css']
+  styleUrls: ['..//client/client.component.css','..//marketing/marketing.component.css','./partners.component.css']
 })
 export class PartnersComponent {
   @HostListener('window:scroll', [])

@@ -72,7 +72,7 @@ section{
  .header .headicon{ 
 	background:rgb(4 73 98); 
 	color:#222; 
-	margin-top:6px;
+	margin-top:15px;
 }
 .header .headicon i{ 
 	height:59px; 
@@ -169,7 +169,7 @@ position: fixed;
     .header .headicon {
         width: 40px;
         height: 40px;
-        margin-top: 0;
+        margin-top: 15px;
     }.header .headicon i {
         height: 40px;
         line-height: 40px;
